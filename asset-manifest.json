@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/JP-Portfolio/static/css/main.8b482d8a.css",
-    "main.js": "/JP-Portfolio/static/js/main.f7f8318a.js",
+    "main.js": "/JP-Portfolio/static/js/main.2a84cea7.js",
     "static/js/563.c7afea76.chunk.js": "/JP-Portfolio/static/js/563.c7afea76.chunk.js",
     "static/media/chosenlogo.png": "/JP-Portfolio/static/media/chosenlogo.77a4b930a62dc0cf38de.png",
     "static/media/img2.jpeg": "/JP-Portfolio/static/media/img2.6e6010efbbd81cd82ba5.jpeg",
@@ -11,11 +11,11 @@
     "static/media/Suryodaylogo.webp": "/JP-Portfolio/static/media/Suryodaylogo.694ad1af56225554a9b6.webp",
     "index.html": "/JP-Portfolio/index.html",
     "main.8b482d8a.css.map": "/JP-Portfolio/static/css/main.8b482d8a.css.map",
-    "main.f7f8318a.js.map": "/JP-Portfolio/static/js/main.f7f8318a.js.map",
+    "main.2a84cea7.js.map": "/JP-Portfolio/static/js/main.2a84cea7.js.map",
     "563.c7afea76.chunk.js.map": "/JP-Portfolio/static/js/563.c7afea76.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8b482d8a.css",
-    "static/js/main.f7f8318a.js"
+    "static/js/main.2a84cea7.js"
   ]
 }
