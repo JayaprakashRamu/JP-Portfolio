@@ -1,0 +1,149 @@
+/* Resetting some styles for a clean slate */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Overall layout */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f7f7f7;
+  padding: 0;
+  margin: 0;
+}
+
+.img-logo{
+  height: 50px;
+  border-radius: 50%;
+}
+a{
+  text-decoration: none;
+}
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  color: white;
+  position: relative;
+  z-index: 1000;
+}
+
+/* Logo */
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color:#00539C;
+}
+
+/* Navbar */
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+}
+
+.nav-item {
+  margin: 0 15px;
+}
+
+.nav-link {
+  color: #00539C;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+  padding: 5px 0;
+  font-weight: 600;
+}
+
+.nav-link:hover {
+  color: rgb(255, 136, 0);
+  border-bottom: 2px solid #00539C;
+}
+
+/* New Toggle Button Styles */
+.toggle-btn {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 35px;
+  height: 30px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  z-index: 1001;
+  padding: 0;
+}
+
+.toggle-btn .bar {
+  width: 100%;
+  height: 4px;
+  background-color: #00539C;
+  border-radius: 5px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.toggle-btn .bar:nth-child(1) {
+  transform-origin: top left;
+}
+
+.toggle-btn .bar:nth-child(3) {
+  transform-origin: bottom left;
+}
+
+.toggle-btn .active:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.toggle-btn .active:nth-child(2) {
+  opacity: 0;
+}
+
+.toggle-btn .active:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+
+  .nav-mobile {
+    display: flex;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color:#f7f7f7;
+    flex-direction: column;
+    padding: 20px 0;
+    z-index: 999;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-item {
+    margin: 10px 0;
+  }
+
+  .nav-item .nav-link {
+    font-size: 18px;
+  }
+
+  .toggle-btn {
+    display: flex;
+  }
+}

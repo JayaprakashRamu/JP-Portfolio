@@ -1,0 +1,14 @@
+/* ScrollToTop.css */
+.scroll-to-top {
+    position: fixed;
+    bottom: 90px;
+    right: 30px;
+    z-index: 1000;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+  }
+  
+  .scroll-to-top:hover {
+    opacity: 1;
+  }
+  

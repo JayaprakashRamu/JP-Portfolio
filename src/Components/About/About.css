@@ -1,0 +1,167 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* About section */
+.about {
+    padding: 50px;
+    background-color: #f7f7f7;
+    text-align: center;
+    opacity: 0;
+    /* Initially hidden */
+    animation: fadeIn 2s ease-in-out forwards;
+    /* Fade-in animation */
+}
+
+.about-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #00539C;
+    margin-bottom: 30px;
+    opacity: 0;
+    /* Initially hidden */
+    animation: fadeIn 2s ease-in-out forwards;
+    animation-delay: 0.5s;
+    /* Delay the title */
+}
+
+.about-heading {
+    font-size: 28px;
+    font-weight: 600;
+    color: #333;
+    opacity: 0;
+    /* Initially hidden */
+    animation: fadeIn 2s ease-in-out forwards;
+    animation-delay: 1s;
+    /* Delay the heading */
+}
+
+.about-subheading {
+    font-size: 22px;
+    font-weight: 500;
+    color: #00539C;
+    margin-top: 20px;
+    opacity: 0;
+    /* Initially hidden */
+    animation: fadeIn 2s ease-in-out forwards;
+    animation-delay: 1.5s;
+    /* Delay the subheading */
+}
+
+.about-description {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+    margin-top: 15px;
+    opacity: 0;
+    /* Initially hidden */
+    animation: fadeIn 2s ease-in-out forwards;
+    animation-delay: 2s;
+    /* Delay the description */
+}
+
+.about-skills {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+    font-size: 16px;
+    text-align: left;
+    color: #555;
+    opacity: 0;
+    /* Initially hidden */
+    animation: fadeIn 2s ease-in-out forwards;
+    animation-delay: 2.5s;
+    /* Delay the skills list */
+}
+
+.about-skills li {
+    margin-bottom: 8px;
+    padding-left: 20px;
+    text-indent: -20px;
+}
+
+/* Image styling */
+/* Image styling */
+.about-img {
+    width: 100%;
+    max-width: 500px;
+    height: 500px;
+    /* Ensures the image is square for a circular shape */
+    border-radius: 50%;
+    /* Makes the image circular */
+    object-fit: fill;
+    /* Ensures the image covers the area inside the circle without distorting */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    /* Initially hidden */
+    animation: fadeIn 2s ease-in-out forwards;
+    animation-delay: 3s;
+    /* Delay the image */
+}
+
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .about-title {
+        font-size: 28px;
+    }
+
+    .about-heading {
+        font-size: 24px;
+    }
+
+    .about-subheading {
+        font-size: 20px;
+    }
+
+    .about-description {
+        font-size: 14px;
+    }
+
+    .about-img {
+        max-width: 250px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .about-skills {
+        font-size: 14px;
+    }
+
+    .about-img {
+        width: 100%;
+        max-width: 400px;
+        height: 300px;
+        border-radius: 50%;
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+        object-fit: fill;
+        opacity: 0;
+        animation: fadeIn 1s 4s forwards;
+    }
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

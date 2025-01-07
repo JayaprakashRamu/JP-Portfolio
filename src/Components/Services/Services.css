@@ -1,0 +1,106 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Container and Layout */
+.services-page {
+  background-color: #f5f5f5; /* Light gray background */
+  padding: 40px 20px 235px;
+}
+
+.services-title {
+  text-align: center;
+  font-size: 2rem; /* Large title */
+  font-weight: 700;
+  color: #00539C;
+  margin-bottom: 50px;
+}
+
+.service-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(163, 35, 35, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.service-heading {
+  font-size: 1.6rem; /* Size of heading */
+  color: #00539C;
+  margin-top: 20px;
+}
+
+.service-description {
+  font-size: 1rem; /* Description text size */
+  color: #7f8c8d;
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+
+.service-button {
+  font-size: 1rem; /* Button font size */
+  padding: 10px 20px;
+  background-color: rgb(255, 136, 0);
+}
+
+/* Icon Styles */
+.service-card-img {
+  width: 48px;  /* Ensure consistent size for all icons */
+  height: 48px; /* Maintain the square shape */
+  margin-top: 20px;
+  padding: 20px;
+}
+
+/* Grid System */
+@media (max-width: 1200px) {
+  .service-card {
+    margin: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .services-title {
+    font-size: 2.5rem; /* Smaller title size on medium screens */
+  }
+  .service-card {
+    margin-bottom: 20px; /* Add some space between the cards */
+  }
+  .service-button {
+    font-size: 0.9rem; /* Adjust button text size */
+  }
+}
+
+@media (max-width: 480px) {
+  .services-title {
+    font-size: 2rem; /* Smaller title size on small screens */
+  }
+
+  .service-card {
+    margin-bottom: 15px; /* Less margin between cards */
+  }
+
+  .service-heading {
+    font-size: 1.3rem; /* Smaller heading size */
+  }
+
+  .service-description {
+    font-size: 0.9rem; /* Smaller description text */
+  }
+
+  .service-button {
+    font-size: 0.9rem; /* Smaller button text */
+  }
+}
