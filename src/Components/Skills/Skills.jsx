@@ -10,7 +10,7 @@ function Skills() {
 
     return (
         <div className='skill' id='skills'>
-            <h1 className="skill-title">Skills</h1>
+            <h1 className="skill-title">Skills & Experience</h1>
             <Row gutter={[16, 24]}>
                 {/* Skills Section */}
                 <Col xs={24} md={14}>
@@ -73,7 +73,7 @@ function Skills() {
                                 },
                                 {
                                     color: 'green',
-                                    label: 'November 2024 - January 2024',
+                                    label: 'November 2024 - January 2025',
                                     children: (
                                         <>
                                             <img src={magic_bus} alt=""  className='exp-img'/>

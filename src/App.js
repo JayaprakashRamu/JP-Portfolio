@@ -1,7 +1,7 @@
 import './App.css';
 import About from './Components/About/About';
 import Contact from './Components/Contact/Contact';
-// import Backtop from './Components/Backtop/Backtop';
+import Backtop from './Components/Backtop/Backtop';
 import Header from './Components/Header/Header';
 import Home from './Components/Home/Home';
 import Project from './Components/Project/Project';
@@ -18,7 +18,7 @@ function App() {
     <Services />
     <Project />
     <Contact />
-    {/* <Backtop  /> */}
+    <Backtop  />
     </>
   );
 }
